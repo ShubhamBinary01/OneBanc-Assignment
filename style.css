@@ -21,6 +21,7 @@ body {
   height: 35px;
   background: rgb(248, 187, 163);
   border-radius: 70px;
+
   position: relative;
   left: 40px;
   bottom: 35px;
@@ -56,6 +57,7 @@ body {
   max-height: fit-content;
   width: 100%;
   border: 2px solid black;
+  border-radius: 10px;
   margin: 1.5%;
 }
 .alignment-left {
@@ -89,6 +91,10 @@ button {
   cursor: pointer;
   letter-spacing: 0.1rem;
 }
+button:hover {
+  background: #ccc;
+  color: white;
+}
 
 .date-time-left {
   display: flex;
@@ -103,4 +109,17 @@ button {
   position: relative;
   top: -20px;
   padding-right: 20px;
+}
+
+@media only screen and (max-width: 1280px) {
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  .date-time-right {
+    top: 0px;
+  }
+  .date-time-left {
+    top: 0px;
+  }
 }
